@@ -1,0 +1,14 @@
+## Versioning
+
+.Revision History
+|===
+| Version | Publication Date | Changes
+
+| none
+| 30 Apr 2109
+| Initial revision.
+
+| {version}
+| TBD
+| First restructuring.
+|===

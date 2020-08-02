@@ -1,0 +1,7 @@
+// bibliography (or at least something like it)
+
+[bibliography]
+- [[[comporg]]] David Patterson, John Hennessy. Computer Organization and
+Design: The Hardware/Software Interface, RISC-V Edition. Morgan Kaufmann
+Publishers. 2018.
+

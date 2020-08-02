@@ -1,0 +1,11 @@
+### Contributors
+
+These individuals either wrote portions of this specification or contributed
+ideas and suggestions in some way:
+
+[%hardbreaks]
+Krste Asanovic <krste@sifive.com>
+Palmer Dabbelt <palmer@sifive.com>
+Al Stone <ahs3@redhat.com>
+Andrew Waterman <andrew@sifive.com>
+

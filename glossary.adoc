@@ -1,0 +1,5 @@
+// glossary and abbreviations
+
+[glossary]
+ISA:: Instruction Set Architecture
+OSPS:: Operating System Platform Specification

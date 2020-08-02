@@ -1,22 +1,92 @@
-# RISC-V UNIX-Class Platform Specification
+# RISC-V Platform Specification
+:author: RISC-V Platform Specification_Working_Group
+:email: platform-spec@riscv.org
+:version: 0.1.1
+:revnumber: {version}
+:revdate: 28 July 2020
+:revremark: First Restructuring
+:toc: macro
 
-## Copyright and license information
+// overall document license and copyrights
+include::licensing.adoc[]
 
-This RISC-V Unix-class platform specification is
+// document contributors
+include::contributors.adoc[]
 
-[%hardbreaks]
-(C) 2017 Krste Asanovic <krste@sifive.com>
-(C) 2017-2019 Palmer Dabbelt <palmer@sifive.com>
-(C) 2017 Andrew Waterman <andrew@sifive.com>
+// revision history
+include::history.adoc[]
 
-It is licensed under the Creative Commons Attribution 4.0 International
-License (CC-BY 4.0).  The full license text is available at
-https://creativecommons.org/licenses/by/4.0/.
+// Table of Contents
+toc::[]
+
 
 ## Introduction
 
-This document contains the RISC-V UNIX-class platform specification.  This
-specification defines additional restrictions on implementations in order to
+This document is the RISC-V Operating System Platform Specification
+(OSPS).  This specification defines what hardware and firmware is
+required to be able to install and use an operating system on a
+platform built around the RISC-V Instruction Set Architecture (ISA).
+
+### Profiles
+This specification is built around the idea of _computing profiles_.
+A core profile defines the absolute minimum components required to build a
+working computer system.  Additional profiles build on that core:
+
+* A _development_ profile, describing the components of systems designed
+specifically for use by hardware and software developers in creating
+new systems.  These are often small single-board computer systems,
+typically with interfaces specific to being able to debug hardware.
+Any number of operating systems may be used.
+
+* A _single-use_ profile, for those systems created for a single
+purpose, that have hardware that will never change, and perhaps
+perform only a single function, such as a toaster or a light bulb.
+These may or may not have an operating system; they may even just run
+a single application.  These systems may or may not be embedded in
+some device.
+
+* A _general computing_ profile, for those systems that are created
+for general use, such as laptops, desktops, or servers.  In this case,
+the expectation is that the hardware and firmware behave in known,
+consistent ways so that any one of the many Linux distributions
+or commercial operating systems can be used, without modification.
+
+These profiles define what an operating system can expect to
+be present in hardware and firmware that implements one of these
+profiles in order to boot, install, and run an operating system.
+
+### Defining A System
+While the RISC-V ISA has its advantages over other ISAs, it is only one part
+of a computing system.  As noted in _Computer Organization and Design_
+<<comporg>>, a computer system has five basic components:
+
+** Input
+** Output
+** Memory
+** Datapath
+** Control
+
+An ISA only defines the control component -- the processor.  RISC-V
+complicates this by introducing the idea of ISA extensions built
+on top of a core set of instructions.  For each of the profiles,
+this specification defines which extensions are required,
+which are optional, and how to handle instructions that are
+not implemented in a particular processor.  If there are limitations
+on how instructions can be used, these are also listed.
+
+Further, this specification defines how each of the privilege levels
+defined by the ISA is to be used.  And again, which parts of the ISA
+are required or optional at those privilege levels are specified.
+
+
+To build a usable computer system -- one that can have firmware and
+software installed to perform some function -- the other four
+components, and the interfaces between
+them need to be defined.
+
+In particular, this specification
+
+This specification defines additional restrictions on implementations in order to
 allow software to be compatible between these implementations.  These
 restrictions are enumerated along with the least privileged level to which they
 apply.  Implementations can be compatible with a subset of this specification,
@@ -25,8 +95,6 @@ well as all less-privileged levels.  For example: implementations can claim to
 be compatible with the "RISC-V Supervisor-Level UNIX Platform" if they are
 compatible with the entire "User-Level Platform" and "Supervisor-Level
 Platform" chapters of this document.
-
-### Versioning
 
 ## User-Level Platform
 
@@ -70,3 +138,11 @@ Platform" chapters of this document.
 ### Portable UNIX Platform Profile
 
 * Supervisor-mode environments must implement RV64GC.
+
+// final sections of goodness
+## Glossary and Abbreviations
+include::glossary.adoc[]
+
+## Bibliography
+include::bibliography.adoc[]
+
