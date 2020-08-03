@@ -1,0 +1,131 @@
+# RISC-V Operating System Platform Specification
+:author: RISC-V Operating System_Platform_Specification_Working_Group
+:email: platform-spec@riscv.org
+:version: 0.1.1
+:revnumber: {version}
+:revdate: 1 August 2020
+:revremark: First draft.
+:toc: macro
+
+## Basic Information
+// overall document license and copyrights
+include::licensing.adoc[]
+
+// document contributors
+include::contributors.adoc[]
+
+// revision history
+include::history.adoc[]
+
+// terms and definitions
+include::terms.adoc[]
+
+// Table of Contents
+toc::[]
+
+
+## Introduction
+
+This document is the RISC-V Operating System Platform Specification
+(OSPS).  This specification defines the hardware and firmware
+required to be able to install and use a general purpose
+operating system on a platform built around the RISC-V
+Instruction Set Architecture (ISA).  In particular, the intent
+is to set out the constraits necessary for a hardware platform
+that can be used by multiple operating systems.
+
+Further, this specification sets out the constraints on the
+RISCV-V Instruction Set Architecture (ISA) -- at all privilege 
+levels -- that are needed to provide a consistent and predictable
+environment for running these operating systems.
+
+In order for a platform to be compliant with OSPS, all
+MUST requirements are mandatory and must be implemented in 
+the platform.  Optional requirements may or may not be
+implemented on any given platform; if such a requirement
+could cause the platform to behave differently when not implemented,
+a fallback position is provided and must be implemented.  For
+example, instructions not implemented in the ISA must trap so
+that they can be emulated in software.
+
+.TODO
+* How is compliance determined?  Test suite?  Other?
+* What else?
+
+
+## Core Requirements
+The requirements listed in this section MUST be provided on
+all platforms in order to be compliant with the OSPS.
+
+### Instruction Set
+See also <<ISAU>> and <<ISAP>>.
+
+#### Minimum Usable ISA Subset (User)
+#### Minimum Usable ISA Subset (Privileged)
+#### Privilege Levels
+#### Addressable Memory
+#### Identification
+##### ISA Modules Implemented (and Level)
+##### CPU Identification
+##### CPU Topology (Sockets, Cores, Threads, Caches)
+#### Performance Monitoring
+#### Debug Instructions
+#### Trace Instructions
+
+### System Components
+Basic HW pieces required.
+
+#### Interrupt Controller
+#### Memory-Mapped I/O
+#### DMA (By Default)
+#### MMU
+** Optional for embedded?
+** Req'd for Virtual Memory support
+** Req'd for Virtualization
+
+#### IOMMU (Optional for Embedded?)
+** Optional for embedded?
+** Req'd for Virtual Memory support
+** Req'd for Virtualization
+
+#### Base Management Controller
+
+#### Serial Console
+#### Debug Port (JTAG?)
+
+
+## Firmware Requirements
+
+### SMBIOS/DMI
+### Device Enumeration
+** Uses for Device Tree
+** Uses for ACPI
+
+### Power Management
+### CPU Frequency Control
+### Thermal Management
+
+## Boot Sequence
+### Initial Boot Loader
+### OpenSBI
+** Trusted Execution Environment
+** Boot Time Services
+** Run Time Services
+*** Processor On/Off
+*** Frequency Control
+*** Power Management
+**** Power off means off
+**** Reset means reboot
+
+### Boot Protocol
+** Passing info to the kernel
+** Handling kernel parameters
+** Handling memory maps
+
+### Firmware Updates
+** No special hardware required!
+
+
+## References
+include::references.adoc[]
+

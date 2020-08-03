@@ -1,0 +1,297 @@
+# TODO List: RISC-V Operating System Platform Specification
+:version: 0.1.1
+:revnumber: {version}
+:revdate: 1 August 2020
+:revremark: First draft.
+
+## Copyright and License Information
+
+This TODO list for the RISC-V Operating System Platform Specification is
+
+[%hardbreaks]
+(C) 2020 Al Stone <ahs3@redhat.com>
+
+It is licensed under the Creative Commons Attribution 4.0 International
+License (CC-BY 4.0).  The full license text is available at
+https://creativecommons.org/licenses/by/4.0/.
+
+## Description
+
+This document is the TODO List for the RISC-V Operating System
+Platform Specification (OSPS).  It only exists because if we don't
+write things down, they usually get forgotten somewhere.
+
+## How To Use The TODO List
+There's no real fixed format.  To add an item, add it to the
+end of the list, incrementing the item number.  Please add a
+date for when the item was created, too.  When an item has been
+completed, please move it to the DONE list, noting when it was
+done and by whom, if possible.
+
+## General TODO
+.General TODO List
+[cols="^1,<4,^2,<4"]
+|===
+| Item | Description | Opened | Notes 
+
+| 0001
+| How is compliance going to be determined? Test suite?  Other?
+| 1 Aug 2020
+| 
+
+|===
+
+.General DONE List
+[cols="^1,<4,<2,^4,<2"]
+|===
+| Item | Description | Opened | Notes | Closed 
+
+|===
+
+
+## Core Requirements TODO
+.Core Requirements TODO List
+[cols="^1,<4,^2,<4"]
+|===
+| Item | Description | Opened | Notes 
+
+|===
+
+.Core Requirements DONE List
+[cols="^1,<4,<2,^4,<2"]
+|===
+| Item | Description | Opened | Notes | Closed 
+
+|===
+
+### Instruction Set TODO
+.Instruction Set TODO List
+[cols="^1,<4,^2,<4"]
+|===
+| Item | Description | Opened | Notes 
+
+| 0001
+| Minimum Usable ISA Subset (User)
+| 1 Aug 2020
+|
+
+| 0002
+| Minimum Usable ISA Subset (Privileged)
+| 1 Aug 2020
+|
+
+| 0003
+| Defined Privilege Levels
+| 1 Aug 2020
+|
+
+| 0004
+| Addressable Memory
+| 1 Aug 2020
+|
+
+| 0005
+| Identification: ISA modules
+| 1 Aug 2020
+| what's implemented, at what level
+
+| 0006
+| Identification: CPU make, model
+| 1 Aug 2020
+| basic frequencies, ??
+
+| 0007
+| Identification: CPU topology
+| 1 Aug 2020
+| sockets, cores, threads, caches
+
+| 0008
+| Performance Monitoring
+| 1 Aug 2020
+|
+
+| 0009
+| Debug Instructions
+| 1 Aug 2020
+|
+
+| 0010
+| Trace Instructions
+| 1 Aug 2020
+|
+
+|===
+
+.Instruction Set DONE List
+[cols="^1,<4,<2,^4,<2"]
+|===
+| Item | Description | Opened | Notes | Closed 
+
+|===
+
+## System Components TODO
+.System Components TODO List
+[cols="^1,<4,^2,<4"]
+|===
+| Item | Description | Opened | Notes 
+
+| 0001
+| CPU-local Interrupt Controller
+| 1 Aug 2020
+| Is such a thing needed?
+
+| 0002
+| Inter-CPU Interrupt Controller
+| 1 Aug 2020
+| Is such a thing needed?
+
+| 0003
+| Memory-Mapped I/O
+| 1 Aug 2020
+| 
+
+| 0004
+| DMA
+| 1 Aug 2020
+| by default?
+
+| 0005
+a| *MMU*
+
+** Optional for embedded?
+** Req'd for Virtual Memory support
+** Req'd for Virtualization
+| 1 Aug 2020
+| 
+
+| 0006
+a| *IOMMU*
+
+** Optional for embedded?
+** Req'd for Virtual Memory support
+** Req'd for Virtualization
+| 1 Aug 2020
+| 
+
+| 0007
+| Base Management Controller
+| 1 Aug 2020
+| 
+
+| 0008
+| Serial Console
+| 1 Aug 2020
+| 
+
+| 0009
+| Debug Port (JTAG?)
+| 1 Aug 2020
+| 
+
+|===
+
+.System Components DONE List
+[cols="^1,<4,<2,^4,<2"]
+|===
+| Item | Description | Opened | Notes | Closed 
+
+|===
+
+
+## Firmware Requirements
+.Firmware TODO List
+[cols="^1,<4,^2,<4"]
+|===
+| Item | Description | Opened | Notes 
+
+| 0001
+| SMBIOS/DMI
+| 1 Aug 2020
+| min rev3?
+
+| 0002
+| Device Enumeration
+| 1 Aug 2020
+| ACPI for servers
+
+| 0003
+| Power Management
+| 1 Aug 2020
+|
+
+| 0004
+| CPU Frequency Control
+| 1 Aug 2020
+| CPPC
+
+| 0005
+| Thermal Management
+| 1 Aug 2020
+|
+
+| 0006
+| Thermal Management
+| 1 Aug 2020
+|
+
+| 0006
+| Firmware Updates
+| 1 Aug 2020
+| No special hardware required
+
+|===
+
+.Firmware DONE List
+[cols="^1,<4,<2,^4,<2"]
+|===
+| Item | Description | Opened | Notes | Closed 
+
+|===
+
+
+## Boot Sequence TODO
+.Boot Sequence TODO List
+[cols="^1,<4,^2,<4"]
+|===
+| Item | Description | Opened | Notes 
+
+| 0001
+| Initial boot loader
+| 1 Aug 2020
+|
+
+| 0002
+a| *OpenSBI*
+
+** Trusted Execution Environment
+** Boot Time Services
+** Run Time Services
+*** Processor On/Off
+*** Frequency Control
+*** Power Management
+**** Power off means off
+**** Reset means reboot
+| 1 Aug 2020
+|
+
+| 0003
+a| *Boot Protocol*
+
+** IPL to UEFI
+** UEFI to GRUB
+** GRUB to Kernel
+** Passing info to the kernel
+** Handling kernel parameters
+** Handling memory maps
+| 1 Aug 2020
+|
+
+|===
+
+.Boot Sequence DONE List
+[cols="^1,<4,<2,^4,<2"]
+|===
+| Item | Description | Opened | Notes | Closed 
+
+|===
+

@@ -1,0 +1,12 @@
+
+### Copyright and License Information
+
+This RISC-V Operating System Platform Specification is
+
+[%hardbreaks]
+(C) 2020 Al Stone <ahs3@redhat.com>
+
+It is licensed under the Creative Commons Attribution 4.0 International
+License (CC-BY 4.0).  The full license text is available at
+https://creativecommons.org/licenses/by/4.0/.
+

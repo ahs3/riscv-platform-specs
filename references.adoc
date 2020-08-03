@@ -1,0 +1,14 @@
+// bibliography (or at least something like it)
+
+[bibliography]
+- [[[COMPORG]]] David Patterson, John Hennessy. Computer Organization and
+Design: The Hardware/Software Interface, RISC-V Edition. Morgan Kaufmann
+Publishers. 2018.
+- [[[ISAU]]] The RISC-V Instruction Set Manual Volume I: Unprivileged
+Specification, Version 20191213.  December 2019.  URL
+https://riscv.org/specifications/.
+- [[[ISAP]]] The RISC-V Instruction Set Manual Volume II: Privileged
+Specification, Version 20190608.  June 2019.  URL
+https://riscv.org/specifications/.
+- [[[RFC2119]]] URL https://www.ietf.org/rfc/rfc2119.txt.
+

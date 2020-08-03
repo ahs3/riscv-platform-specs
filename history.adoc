@@ -1,0 +1,10 @@
+### Versioning
+
+.Revision History
+|===
+| Version | Publication Date | Changes
+
+| {version}
+| 20 August 2020
+| Initial revision.
+|===
