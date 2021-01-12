@@ -1,0 +1,12 @@
+// SPDX-License-Indentifer: CC-BY-4.0
+//
+// references.adoc: bibliography
+//
+// Books and other reference material used in the specification.
+//
+[preface]
+
+## References
+
+[bibliography]
+- [[[RFC2119]]] URL https://www.ietf.org/rfc/rfc2119.txt

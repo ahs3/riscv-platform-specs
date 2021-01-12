@@ -1,0 +1,27 @@
+// SPDX-License-Indentifer: CC-BY-4.0
+//
+// glossary.adoc: terms and definitions
+//
+// Define all terms, acronyms, and jargon used in the spec
+//
+[glossary]
+
+## Terms, Definitions, and Acronyms
+
+The key words *MUST*, *MUST NOT*, *REQUIRED*, *SHALL*, *SHALL
+NOT*, *SHOULD*, *SHOULD NOT*, *RECOMMENDED*,  *MAY*, and
+*OPTIONAL* in this document are to be interpreted as described in
+IETF <<RFC2119>>.
+
+[horizontal]
+.Terms, Definitions, and Acronyms
+ACPI:: Advanced Configuration and Power Interface
+COTS:: Commercial Off-The-Shelf -- items readily available on the open
+       market, versus bespoke or custom creations
+DT:: Device Tree
+FDT:: Flattened Device Tree
+hart:: hardware thread
+ISA:: Instruction Set Architecture
+OE:: Operating Environment
+OS:: Operating System
+RVP2S:: RISC-V Profiles and Platform Specification
