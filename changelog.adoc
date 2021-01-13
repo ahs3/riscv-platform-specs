@@ -14,3 +14,4 @@
    to make changes down the line.
 * 2021-01-12:
 ** Provide an updated introduction.
+** Provide an initial set of terms, definitions and acronyms.
