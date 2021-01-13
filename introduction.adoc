@@ -5,7 +5,7 @@
 // Provide a basic introduction to the overall document.
 //
 
-# Introduction
+## Introduction
 
 This document is the RISC-V Profiles and Platform Specification (RVP2S).
 
