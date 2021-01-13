@@ -33,19 +33,10 @@ include::references.adoc[]
 :sectnums:
 include::introduction.adoc[]
 
-// User-Level Platform (NB: content from very first version)
-include::user-level.adoc[]
-
-// Supervisor-Level Platform (NB: content from very first version)
-include::supervisor-level.adoc[]
-
-// Machine-Level Platform (NB: content from very first version)
-// This is the only line in that original content.
-## Machine-Level Platform
-
-// Profiles: (NB: content from very first version)
-include::profiles.adoc[]
+// Appendices
 
 // acknowledge all of the contributors
 include::contributors.adoc[]
 
+// copy of original content that has yet to be reviewed and/or used
+include::original.adoc[]

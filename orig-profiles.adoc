@@ -5,9 +5,9 @@
 // This is material from the very first draft of the spec.
 //
 
-## Profiles
+### Profiles
 
-### Portable UNIX Platform Profile
+#### Portable UNIX Platform Profile
 
 * Supervisor-mode environments must implement RV64GC.
 

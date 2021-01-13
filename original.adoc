@@ -1,0 +1,36 @@
+// SPDX-License-Indentifer: CC-BY-4.0
+//
+// original.adoc: contents from the very first version of this spec
+//
+// A copy of the original content of the spec that has NOT been reviewed
+// for incorporation into the new form.
+//
+[appendix]
+
+## Original Content
+
+The following sections are from the very first version of this
+specification.  So much has changed, however, that this content
+has for now been moved to this appendix so that it can be reused
+in the new form of the specification, if possible, but will not
+distract from the new material being added.
+
+As content in this appendix is reviewed and considered, it will
+be either moved to the proper section along with any new material,
+or it will be removed as no longer needed.  The goal is to eventually
+empty this appendix so that it can then be removed from the specification.
+
+:!sectnums:
+// User-Level Platform (NB: content from very first version)
+include::orig-user-level.adoc[]
+
+// Supervisor-Level Platform (NB: content from very first version)
+include::orig-supervisor-level.adoc[]
+
+// Machine-Level Platform (NB: content from very first version)
+// This is the only line in that original content.
+### Machine-Level Platform
+
+// Profiles: (NB: content from very first version)
+include::orig-profiles.adoc[]
+

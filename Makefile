@@ -6,8 +6,8 @@ ASCIIDOCTOR = asciidoctor
 PLATFORM_SPEC = riscv-platform-spec
 PANDOC = pandoc
 PARTS = changelog.adoc contributors.adoc glossary.adoc introduction.adoc \
-	licensing.adoc profiles.adoc references.adoc supervisor-level.adoc \
-	user-level.adoc
+	licensing.adoc original.adoc references.adoc \
+	orig-profiles.adoc orig-supervisor-level.adoc orig-user-level.adoc
 
 # Build the platform spec in several formats
 all: $(PLATFORM_SPEC).md $(PLATFORM_SPEC).pdf $(PLATFORM_SPEC).html

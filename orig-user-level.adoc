@@ -5,7 +5,7 @@
 // This is material from the very first draft of the spec.
 //
 
-## User-Level Platform
+### User-Level Platform
 
 * User-mode environments must implement at least version 2.2 of the RISC-V User
   ISA specification, which can be found at

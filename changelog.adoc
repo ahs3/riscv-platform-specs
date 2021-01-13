@@ -15,3 +15,5 @@
 * 2021-01-12:
 ** Provide an updated introduction.
 ** Provide an initial set of terms, definitions and acronyms.
+** Move all of the original content to an appendix for possible
+   reuse later.
