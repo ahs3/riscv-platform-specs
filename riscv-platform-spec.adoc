@@ -23,7 +23,14 @@ include::licensing.adoc[]
 // changelog for the document
 include::changelog.adoc[]
 
+// terms, definitions and acronyms
+include::glossary.adoc[]
+
+// bibliography or other references
+include::references.adoc[]
+
 // Introduction: describe the intent and purpose of the document
+:sectnums:
 include::introduction.adoc[]
 
 // User-Level Platform (NB: content from very first version)
